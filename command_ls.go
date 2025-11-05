@@ -16,7 +16,7 @@ func commandLs(args ...string) error {
 		return fmt.Errorf("could not read current working directory")
 	}
 
-	fmt.Println("   Mode       Type       Length")
+	fmt.Println("   Mode       Type       Length Name")
 	fmt.Println()
 
 	for _, file := range files {
